@@ -14,6 +14,7 @@ class AnimalsTableViewCell: UITableViewCell {
         label.font = UIFont.systemFont(ofSize: 30)
         label.translatesAutoresizingMaskIntoConstraints = false
         label.isAccessibilityElement = true
+        label.accessibilityHint = "Emoji representation of animal"
         return label
     }()
         
@@ -22,6 +23,7 @@ class AnimalsTableViewCell: UITableViewCell {
         label.font = UIFont.systemFont(ofSize: 16)
         label.translatesAutoresizingMaskIntoConstraints = false
         label.isAccessibilityElement = true
+        label.accessibilityHint = "The name of the animal"
         return label
     }()
     

@@ -43,6 +43,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         let cell = tableView.dequeueReusableCell(withIdentifier: "AnimalsCell", for: indexPath) as! AnimalsTableViewCell
         cell.lblEmoji.text = animals[indexPath.row].icon
         cell.lblName.text = animals[indexPath.row].name
+        cell.lblName.accessibilityHint = animals[indexPath.row].name
         return cell
     }
     
